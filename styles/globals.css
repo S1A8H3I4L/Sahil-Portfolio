@@ -1,0 +1,82 @@
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brutal-black:  #111111;
+    --brutal-white:  #F5F0E8;
+    --brutal-yellow: #FFD60A;
+    --brutal-teal:   #00C9B1;
+    --brutal-pink:   #FF6B9D;
+    --brutal-blue:   #4ECDC4;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--brutal-white);
+    color: var(--brutal-black);
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--brutal-yellow);
+    color: var(--brutal-black);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: var(--brutal-white); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--brutal-black);
+    border: 2px solid var(--brutal-white);
+  }
+}
+
+@layer components {
+  /* Neo-brutalism card */
+  .brutal-card {
+    @apply border-[2.5px] border-brutal-black shadow-brutal bg-brutal-white;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .brutal-card:hover {
+    @apply shadow-brutal-hover;
+    transform: translate(-3px, -3px);
+  }
+
+  /* Primary button */
+  .btn-brutal {
+    @apply border-[2.5px] border-brutal-black shadow-brutal font-bold font-grotesk cursor-pointer inline-block;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn-brutal:hover {
+    @apply shadow-brutal-hover;
+    transform: translate(-2px, -2px);
+  }
+  .btn-brutal:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #111;
+  }
+
+  /* Section label pill */
+  .section-label {
+    @apply inline-block font-mono text-xs font-bold tracking-widest uppercase bg-brutal-black text-brutal-white px-3 py-1 mb-4;
+  }
+
+  /* Section heading */
+  .section-heading {
+    @apply font-grotesk font-bold leading-none tracking-tighter;
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+  }
+
+  /* Skill/tech tag */
+  .skill-tag {
+    @apply border-2 border-brutal-black px-2 py-1 text-[0.7rem] font-bold font-mono bg-brutal-white rounded-sm;
+  }
+}
