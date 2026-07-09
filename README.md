@@ -165,7 +165,7 @@ styles/
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/S1A8H3I4L/Sahil-Portfolio.git
 ```
 
 Install dependencies
