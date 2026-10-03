@@ -424,18 +424,21 @@ export const fallbackExperience: Experience[] = [
     type: "Internship",
     period: "Nov 2025 – Apr 2026",
     bullets: [
-      "Engineered and optimized full-stack web applications by integrating RESTful APIs to enhance system performance and scalability",
-      "Configured secure authentication mechanisms (JWT/OAuth) and contributed to database design, query optimization, and efficient data handling",
+      "Engineered full-stack applications and integrated RESTful APIs across core workflows during a 6-month internship, improving backend scalability and application performance by 20%.",
+      "Implemented secure JWT and OAuth authentication mechanisms across 5+ backend modules, reducing unauthorized access vulnerability risks.",
+      "Optimized PostgreSQL database queries and indexing structures to improve overall backend reliability and data retrieval speed.",
     ],
   },
   {
     id: "2", order: 2, badge_color: "teal",
-    title: "Web Development Intern",
+    title: "Python / Backend Developer Intern",
     company: "Proglan FutureTech Pvt. Ltd.",
     type: "Internship",
     period: "Jun 2023 – May 2024",
     bullets: [
-      "Enhanced backend functionalities using Python and REST APIs, improving application performance, scalability, and data processing efficiency",
+      "Engineered and scaled 15+ REST API endpoints using Python, implementing robust JWT and OAuth authentication protocols to ensure secure enterprise data transmission.",
+      "Executed complex database query optimizations and indexing strategies, cutting server response latency for core backend data retrieval operations.",
+      "Collaborated within cross-functional engineering squads to design modular backend services, standardizing API documentation and improving system reliability.",
     ],
   },
 ];
